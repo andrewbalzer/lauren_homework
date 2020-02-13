@@ -41,7 +41,7 @@ console.log(`sigma(x sub i - mean)^2 = ${numerator}\n`);
 
 // variance
 const variance = numerator / (arr.length - 1);
-console.log(`${numerator} / (${arr.length} - 1) = ${variance}\n`);
+console.log(`variance = ${numerator} / (${arr.length} - 1) = ${variance}\n`);
 
 // standard deviation
 const standardDeviation = Math.sqrt(variance);
