@@ -10,12 +10,16 @@
 let arr = [35, 10, 22, 38, 31, 27, 53, 44, 16, 44, 25, 12];
 
 // range
-const range = Math.max(...arr) - Math.min(...arr);
-console.log(`range = ${range}\n`);
+const max = Math.max(...arr);
+const min = Math.min(...arr);
+const range = max - min;
+console.log(`range = ${max} - ${min} = ${range}\n`);
 
 // mean
-const mean = arr.reduce((x, y) => x + y, 0) / arr.length;
-console.log(`mean = ${mean}\n`);
+const meanNumerator = arr.reduce((x, y) => x + y, 0);
+const meanDenominator = arr.length;
+const mean = meanNumerator / meanDenominator;
+console.log(`mean = ${meanNumerator} / ${meanDenominator} = ${mean}\n`);
 
 let numerator = 0;
 for (let i = 0; i < arr.length; i++) {
